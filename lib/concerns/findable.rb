@@ -1,5 +1,6 @@
 module Concerns::Findable
   attr_accessor :name, :song
+  
   def find_by_name(name)
     self.all.detect{|song| song.name == name}
   end
