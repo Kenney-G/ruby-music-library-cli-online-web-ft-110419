@@ -21,8 +21,8 @@ class MusicLibraryController
       input = gets.strip
      
       def list_songs
-          order = Song.all.sort_by {|song| song.name}
-          order.each_with_index do |song, index|
+        order = Song.all.sort_by {|song| song.name}
+        order.each_with_index do |song, index|
           puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
             end
       end
