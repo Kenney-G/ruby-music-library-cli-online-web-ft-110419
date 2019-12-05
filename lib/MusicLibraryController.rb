@@ -4,6 +4,7 @@ class MusicLibraryController
     data = MusicImporter.new(path)
     data.import
   end
+  
   def call
     input = ''
 
