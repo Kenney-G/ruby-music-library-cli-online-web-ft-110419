@@ -35,7 +35,7 @@ class Artist
   end
   
   def genres
-    @songs.collect {|x| x.genre}.uniq 
+    @songs.collect {|s| s.genre}.uniq 
   end
   
 end 
